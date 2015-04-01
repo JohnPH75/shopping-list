@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**
+ * HTML5 display-role reset for older browsers
+ */
+/**
+ * End of Reset
+ */
+/**
+ * Start of Custom Styles
+ */
+body {
+background-color: #BEBEBE;
+min-width: 900px;
+font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+td {
+color: #000;
+text-shadow: 1px 1px 1px #6F91AD;
+font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+h1 {
+color: #6F91AD;
+text-shadow: 1.5px 1.5px 1.5px #000;
+font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+
+}
+.list>h3, .edit, {
+	color: #000;
+text-shadow: 1px 1px 1px #FFCF65;
+font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+header {
+text-align: center;
+padding-top: 40px;
+background-image: url('../img/tomato.gif');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 29rem;
+    overflow: auto;
+}
+
+.input {
+text-align: center;
+padding: 17px 0 25px 0;
+border-top: 1px solid #95a5a6;
+border-bottom: 1px solid #95a5a6;
+background-color: #666666;
+}
+.input, h3 {
+  margin-bottom: 1rem;
+}
+.custinput {
+width: 400px;
+background-color: #333333;
+border: 3px solid #fff;
+border-radius: 5px;
+color: #fff;
+padding: 10px 10px;
+}
+input.custinput:focus {
+outline-style: none;
+border-color: #6F91AD;
+}
+.btn {
+background-color: #000;
+border: 1px solid #6F91AD;
+border-radius: 3px;
+color: #6F91AD;
+text-shadow: 1px 1px 1px #fff;
+font-size: 20px;
+padding: 8px 15px 10px 15px;
+margin-left: 15px;
+cursor: pointer;
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: #fff;
+	color: red;
+  text-shadow: 1px 1px 1px red;
+}
+button.btn:active {
+background-color: #19713e;
+border-color: #1e9751;
+outline: none;
+}
+button.btn:focus {
+outline: none;
+}
+.edit {
+text-decoration: none;
+text-align: right;
+font-size: 14px;
+min-width: 600px;
+}
+.edit span {
+cursor: pointer;
+background-color: #fff;
+color: #6F91AD;
+text-shadow: 1px 1px 1px #fff;
+padding: 3px 6px 3px 6px;
+  border: 1px solid #6F91AD;
+  border-radius: 3px;
+}
+.edit span:hover {
+	cursor: pointer;
+	color: red;
+	text-shadow: 1px 1px 1px red;
+}
+.list h3 {
+text-align: center;
+}
+.items {
+clear: both;
+margin: 0 auto;
+}
+td {
+padding: 13px 9px;
+font-size: 19px;
+}
+thead tr {
+border: none;
+}
+tr {
+border-bottom: 1px solid #ecf0f1;
+}
+.cross {
+display: none;
+cursor: pointer;
+}
+.content {
+width: 500px;
+}
+.checked {
+position: relative;
+}
+.checked::after {
+content: '';
+border-bottom: 3px solid red;
+position: absolute;
+left: 0;
+top: 55%;
+width: 100%;
+}
+/*  CUSTOM CHECKBOX  */
+
+input[type=CHECKBOX].box {
+display: none;
+}
+input[type=checkbox].box + label.check-label {
+padding-left: 20px;
+height: 15px;
+display: inline-block;
+line-height: 15px;
+background-repeat: no-repeat;
+background-position: 0 0;
+font-size: 15px;
+vertical-align: middle;
+cursor: pointer;
+}
+input[type=checkbox].box:checked + label.check-label {
+background-position: 0 -15px;
+}
+label.check-label {
+background-image: url(http://www.csscheckbox.com/checkboxes/u/csscheckbox_d2b25024735394b3e45db98ce4cf9265.png);
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.content {
+    padding: 0 0.938rem;
+    margin: -23px auto;
+    min-width: 37.5rem;
+}
+:focus {
+    outline: none;
+}
+
+/**
+ * Navigation Section
+ */
+.top-navigation {
+    background-color: transparent;
+    background-image: url('../img/water.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid ##6F91AD;
+    z-index: 9999;
+}
+.top-navigation > .content {
+    height: 4.375rem;
+}
+.top-navigation .logo {
+    height: 4.375rem;
+}
+.top-navigation .links {
+    color: #6F91AD;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+    text-shadow: 1px 1px 1px #fff;
+    width: 25%;
+    margin: 55px auto;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.top-navigation .links li.active {
+    color: #6F91AD;
+    font-weight: 500;
+    font: bold 1.3rem sans-serif;
+    text-shadow: 1px 1px 1px #fff;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: red;
+    text-shadow: 1px 1px 1px red;
+}
+.top-navigation ul li a { background: #fff;
+border-style: none;
+  border-radius: 9px;
+  padding: 0.5rem 0.5rem;
+  border: 3px solid #6F91AD;
+ }
+
+a {
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+ul li {
+  font: bold 1rem sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #;
+  cursor: (pointer);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:(hover) (description) {
+  background: ;
+  color: gray;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+p a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-top: 1rem;
+  color: gray;
+}
+p a:hover {
+  cursor: pointer;
+  color: #FFCF65;
+  text-shadow: 1px 1px 1px black;
+}
+#jquery-list-menu {
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+background: #fff;
+}
+.list { text-transform: uppercase; }
+
